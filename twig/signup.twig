@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <meta charset="utf-8">
+    <title>Tilmeld</title>
+</head>
+<body>
+<h1>Træningsmakker</h1>
+<h2>Tilmeld</h2>
+<form action="signup.php" method="POST">
+    <label>Brugernavn</label>
+    <input type="text" name="username" maxlength="30"/>
+    <label>Kodeord</label>
+    <input type="password" name="password" maxlength="30"/>
+    <input type="submit" value="Tilmeld"/>
+</form>
+<p>
+    {{ errormsg }}
+</p>
+</body>
+</html>

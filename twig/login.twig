@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <meta charset="utf-8">
+    <title>Log ind</title>
+</head>
+<body>
+<h1>Træningsmakker</h1>
+<h2>Log ind</h2>
+<form action="index.php" method="POST">
+    <label>Brugernavn</label>
+    <input type="text" name="username" maxlength="30"/>
+    <label>Kodeord</label>
+    <input type="password" name="password" maxlength="30"/>
+    <input type="submit" value="Log ind"/>
+</form>
+<p>
+    {{ errormsg }}
+</p>
+<p><a href="signup.php">Tilmeld</a></p>
+</body>
+</html>

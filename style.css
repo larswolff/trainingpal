@@ -1,0 +1,6 @@
+.buttons ul li,a {
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    font-size: 200%;
+}

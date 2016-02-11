@@ -1,0 +1,19 @@
+<p>Hej {{ username }},</p>
+<p>Du mangler at træne:</p>
+<div class="buttons">
+    <ul>
+        {% for row in rows %}
+        <li><a href="{{ row.link }}">{{ row.title }}</a></li>
+        {% else %}
+        Listen er tom.
+        {% endfor %}
+    </ul>
+</div>
+<hr/>
+<div>
+    <ul>
+        <li><a href="add.php">Opret ny træningsform</a></li>
+        <li><a href="start_session.php">Start trænings pas</a></li>
+        <li><a href="logout.php">Log af</a></li>
+    </ul>
+</div>
